@@ -1,6 +1,6 @@
 <?php
 
-namespace VoyagerAdmin\TestbenchPlugin;
+namespace Voyager\TestbenchPlugin;
 
 use Voyager\Admin\Contracts\Plugins\ThemePlugin as ThemeBase;
 

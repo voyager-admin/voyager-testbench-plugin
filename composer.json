@@ -12,14 +12,14 @@
     },
     "autoload": {
         "psr-4": {
-            "VoyagerAdmin\\TestbenchPlugin\\": "src/"
+            "Voyager\\TestbenchPlugin\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "VoyagerAdmin\\TestbenchPlugin\\TestbenchPluginServiceProvider"
+                "Voyager\\TestbenchPlugin\\TestbenchPluginServiceProvider"
             ]
         }
     }
