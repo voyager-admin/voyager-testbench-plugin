@@ -12,11 +12,6 @@ class ThemePlugin extends ThemeBase
     public $website = 'https://github.com/voyager-admin/voyager-testbench-plugin';
     public $version = '1.0.0';
 
-    public function getInstructionsView(): ?View
-    {
-        return null;
-    }
-
     public function registerProtectedRoutes()
     {
         //
@@ -34,20 +29,10 @@ class ThemePlugin extends ThemeBase
         })->name('theme-plugin');
     }
 
-    public function getSettingsView(): ?View
-    {
-        return null;
-    }
-
-    public function getCssRoutes(): array
+    public function provideCss(): array
     {
         return [
             route('theme-plugin')
         ];
-    }
-
-    public function getJsRoutes(): array
-    {
-        return [];
     }
 }
