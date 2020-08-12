@@ -1,0 +1,27 @@
+{
+    "name": "voyager-admin/voyager-testbench-plugin",
+    "description": "Voyager testbench plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoph Schweppe",
+            "email": "info@cschweppe.de"
+        }
+    ],
+    "require": {
+        "voyager-admin/admin": "2.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "VoyagerAdmin\\TestbenchPlugin\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VoyagerAdmin\\TestbenchPlugin\\TestbenchPluginServiceProvider"
+            ]
+        }
+    }
+}
