@@ -4,7 +4,7 @@ namespace Voyager\TestbenchPlugin;
 
 use Voyager\Admin\Contracts\Plugins\ThemePlugin as ThemeBase;
 
-class ThemePlugin extends ThemeBase
+class ThemePlugin implements ThemeBase
 {
     public $name = 'Theme';
     public $description = 'A etstbench theme';
