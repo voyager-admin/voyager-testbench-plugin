@@ -9,6 +9,7 @@ class TestbenchPluginServiceProvider extends ServiceProvider
 {
     public function boot(PluginManager $pluginmanager)
     {
+        $pluginmanager->addPlugin(\Voyager\TestbenchPlugin\GenericPlugin::class);
         $pluginmanager->addPlugin(\Voyager\TestbenchPlugin\ThemePlugin::class);
     }
 
